@@ -1,0 +1,33 @@
+ Manual creating route
+ /*for (var i = 0; i < 10; i++)
+     {
+         pointsLine.pushLatLngAlt(44+i/50, 44+i/50);
+         if (pointsLine.getPointCount() == 2) {
+             route = new H.map.Polyline(pointsLine, {style: {strokeColor: "red", lineWidth: 5}});
+             histMap.addObject(route);
+         }
+         else if (pointsLine.getPointCount() > 2) {
+             route.setGeometry(pointsLine);
+         }
+     }
+
+     histMap.setViewBounds(route.getBounds());*/
+
+
+Place and delete marker
+/*if (userRouteButton.className != "activeButton")
+    {
+        userRouteButton.className = "activeButton";
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var newPositionPoint = new H.geo.Point(latitude, longitude);
+            marker = new H.map.Marker(newPositionPoint);
+            histMap.addObject(marker);
+        });
+    }
+    else
+    {
+        userRouteButton.className = "";
+        histMap.removeObject(marker);
+    }*/

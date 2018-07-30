@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1526040296" />
+    <link rel="stylesheet" type="text/css" href="MapAndButtonStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="CommentsStyles.css"/>
+
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+    <script type="text/javascript" src="SideBar.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<button id="userRouteButton">Start routing</button>
+<button id="getCurrentPositionButton">Show my position</button>
+
+<script type="text/javascript" src="MapCreator.js"></script>
+<script type="text/javascript" src="MapMarkers.js"></script>
+<script type="text/javascript" src="MapEvents.js"></script>
+
+<div id="sidebar">
+    <div class="toggle-bth" onclick="ShowSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <hr>
+            <li>
+                <h5>
+                    <img src="http://lh3.googleusercontent.com/-WtkK5R3977w/AAAAAAAAAAI/AAAAAAAAAAA/8fxWuMfsl_I/w60-h60-p-rp-mo-ba2-br100/photo.jpg&quot" alt="">
+                    <br>Анна Глазова
+                </h5>
+                <br><p>Отличное место! Выглядит очень интересно.</p>
+            </li>
+        <hr>
+
+        <hr>
+            <li>
+                <h5>
+                    <img src="http://lh5.googleusercontent.com/-sJiQBoozy2k/AAAAAAAAAAI/AAAAAAAAAAA/Bd8_2y57aIo/w60-h60-p-rp-mo-br100/photo.jpg&quot" alt="">
+                    <br>Иван Грозный
+                </h5>
+                <br><p>Очень красивое место. Сюда можно прийти как компанией, так и одному. Мы с сыном были впечатлены.</p>
+            </li>
+        <hr>
+
+        <hr>
+            <li>
+                <h5>
+                    <img src="http://lh6.googleusercontent.com/-W6AmB5FJiM4/AAAAAAAAAAI/AAAAAAAAAAA/-g8KgSCMAGs/w60-h60-p-rp-mo-ba4-br100/photo.jpg&quot" alt="">
+                    <br>Sultan Bachalov
+                </h5>
+                <br><p>Ничего особенного, в моём городе полно таких мест. Не понимаю восторженных комментариев выше.</p>
+            </li>
+        <hr>
+
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: "Trebuchet MS";
+}
+
+#sidebar
+{
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+}
+
+#sidebar.active
+{
+    left: 0;
+}
+
+#sidebar ul li
+{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+}
+
+#sidebar .toggle-bth
+{
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggle-bth span
+{
+    width: 45px;
+    height: 4px;
+    background: #1f262a;
+    display: block;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+#sidebar ul li p,h5
+{
+    font-size:14px;
+    text-align: left;
+}
+
+#sidebar ul li img
+{
+    float: left;
+    margin-top: 0;
+    margin-right: 20px;
+    width: 50px;
+}
+
+#sidebar ul li
+{
+    margin: 5px;
+}
+
+/*#sidebar ul{
+}*/
+
+hr
+{
+    color: rgba(128,128,128, 0.9);
+    width: 250px;
+    border-radius: 5px;
+    margin: 3px auto;
+}
+
+.bubble
+{
+    width: 200px;
+    text-align: left;
+    font-family: "Trebuchet MS";
+}
+
+.bubble a
+{
+    text-decoration: none;
+    color: #83d7f1;
+    font-size: 14px;
+    line-height: 0.9;
+}
+
+.bubble .description
+{
+    font-size: 12px;
+    line-height: 90%;
+}
+
+.bubble .address
+{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 10px;
+}
